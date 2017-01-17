@@ -111,7 +111,7 @@ def is_inspection_row(elem):
 
 
 def extract_score_data(elem):
-    """Extract the score for each inspection."""
+    """Get the score for each restaurant."""
     inspection_rows = elem.find_all(is_inspection_row)
     samples = len(inspection_rows)
     total = high_score = average = 0
